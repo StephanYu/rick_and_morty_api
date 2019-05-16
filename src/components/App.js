@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import { ApolloProvider } from "react-apollo";
-import Main from "./Main";
+
 import Navbar from "./Navbar";
+import Main from "./Main";
+import Footer from "./Footer";
 // import List from "./List";
 
 const App = ({ graphqlClient }) => {
@@ -13,6 +15,7 @@ const App = ({ graphqlClient }) => {
       <Main />
       {/* Alternative way to fetch data via render props pattern with the below List component*/}
       {/* <List /> */}
+      <Footer />
     </ApolloProvider>
   );
 }
